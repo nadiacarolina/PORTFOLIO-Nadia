@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0", user-scalable="non">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>MI PORTFOLIO</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#formaciones" onclick="seleccionar(this)">EDUCACION</a></li>
+                            <li><a href="#experiencias" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!---Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                       <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                       <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Nadia Carolina</span>, Emprendedora, Estudiante y Artista.</h2>
+                <p class="descripcion"><br></p>
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/WhatsApp Image 2023-03-04 at 15.45.08.jpeg" alt="">
+
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <p>Soy estudiante de la Carrera de Artes Visuales con orientación en escultura. 
+                <br>Me gusta estar en la busqueda constante de nuevo aprendizajes y desafios, es por eso que me inicie en el mundo de la programación.
+                <br>Ademas, llevo a cabo la gestión de dos empredimientos personales, una tienda de ropa y otra tienda de artesanias</p>
+            <p>
+               Mi meta a cumplir a corto plazo, diseñar y desarrollar herramientas que sirvan para mis emprendimientos y en un futuro expandirlas.
+            </p>
+        </div>
+    </section>
+
+    <!--SECCION FORMACION-->
+    <section id="formaciones">
+        <h3 class="titulo-seccion">HISTORIAL EDUCATIVO</h3>
+        <div class="fila">
+            <div class="formacion">
+                <h4>Secundario Completo</h4>
+                <hr>
+                <p>Colegio Leopoldo Lugones N°7
+                   <br>Certificado en Educación Polimodal en la modalidad Ciencias Naturales con énfasis en Salud y Ambiente</p>
+
+            </div>
+            <div class="formacion">
+                <h4>Curso de Auxiliar en Farmacia</h4>
+                <hr>
+                <p>Escuela de Artes y Oficios.<br>Universidad Nacional de Santiago del Estero</p>
+
+            </div>
+            <div class="formacion">
+                <h4>Profesorado de Artes Visuales</h4>
+                <hr>
+                <p>Instituto Superior de Bellas Artes Juan Yapari</p>
+
+            </div>
+    
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>OTRAS COMPETENCIAS</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Emprendedora</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="1" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Rápido aprendizaje y adaptacion</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="2" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Flexibilidad ante cambio</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="3" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Responsanilidad y Compromiso</p>
+                <span class="porcentaje">98%</span>
+            </div>
+            <div class="barra">
+                <div id="4" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Trabajo en equipo y cooperación</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="5" class="barra-progreso5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="experiencias">
+        <h3 class="titulo-seccion">TRABAJOS REALIZADOS</h3>
+        <div class="fila">
+            <div class="formacion">
+                <h4>promotora en el Evento Creo Santiago</h4>
+                <hr>
+                <p>Nodo Tecnologico de Santiago del Estero
+                    <br> Santiago del Estero, Argentina</p>
+            </div>
+            <div class="formacion">
+                <h4>Vendedora en local comercial XL</h4>
+                <hr>
+                <p>Esporadicamente como refuerzo en fechas especiales
+                   <br> Santiago del Estero, Argentina</p>
+            </div>
+            <div class="formacion">
+                <h4>Atencion al publico en verduleria y kioskos</h4>
+                <hr>
+                <p>Santiago del Estero, Argentina</p>
+
+            </div>
+        </div>
+        <div class="fila">
+            <div class="formacion">
+                <h4>Cuidado de adultos mayores</h4>
+                <hr>
+                <p>Santiago del Estero, Argentina</p>
+                </p>
+
+            </div>
+            <div class="formacion">
+                <h4>Profesora particular de matemática, nivel primario</h4>
+                <hr>
+                <p>Santiago del Estero, Argentina
+                </p>
+
+            </div>
+            <div class="formacion">
+                <h4>Empredimientos</h4>
+                <hr>
+                <p>NO ME ATES - Tienda Online, venta de indumentario urbana
+                    <br>A LA VUELTA DE LA ESQUINA - Area de produccion, diseño y pintado de mates, cuadros, entre otras cosas.
+                    <br>Santiago del Estero, Argentina
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                
+            </form>
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            
+            <a href=""><i class="fa-brands fa-instagram"></i></a> 
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
